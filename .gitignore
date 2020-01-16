@@ -1,3 +1,5 @@
 __pycache__/
-/.venv/
-/ashpb_brain_games.egg-info/
+.venv/
+*.egg-info/
+dist/
+*.pyc
