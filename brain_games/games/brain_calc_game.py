@@ -5,8 +5,8 @@ GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
 def generate_qa_pair():
-    number1 = randint(0, 99)
-    number2 = randint(0, 99)
+    number1 = randint(0, 100)
+    number2 = randint(0, 100)
     operation = choice(['+', '-', '*'])
     expression = "{} {} {}".format(number1, operation, number2)
     calc_funcs = {
