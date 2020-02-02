@@ -1,4 +1,4 @@
-from brain_games import cli
+from games import cli
 
 
 def main():
