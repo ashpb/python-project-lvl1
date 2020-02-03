@@ -1,11 +1,17 @@
 [tool.poetry]
 name = "ashpb_brain_games"
-version = "0.5.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "0.5.1"
+description = "Hexlet Python study project 1 (Brain Games)"
+authors = ["Pavel Borisov <ashpb@me.com>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "License :: Freeware"
+]
+repository = "https://github.com/ashpb/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.7"
