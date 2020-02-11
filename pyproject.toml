@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ashpb_brain_games"
-version = "0.5.1"
+version = "0.5.2"
 description = "Hexlet Python study project 1 (Brain Games)"
 authors = ["Pavel Borisov <ashpb@me.com>"]
 packages = [
