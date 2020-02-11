@@ -1,8 +1,16 @@
 from random import randint
-from math import gcd
 from brain_games import game_flow
 
 GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
+
+def gcd(number1, number2):
+    if(number2 == 0):
+        return abs(number1)
+    remainder = number1 % number2
+    if(remainder == 0):
+        return abs(number2)
+    return gcd(number2, remainder)
 
 
 def generate_qa_pair():
