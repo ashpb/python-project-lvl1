@@ -1,7 +1,6 @@
 from random import randint
-from brain_games import game_flow
 
-GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def is_even(number):
@@ -12,7 +11,3 @@ def generate_qa_pair():
     number = randint(0, 100)
     even = 'yes' if is_even(number) else 'no'
     return (number, even)
-
-
-def run():
-    game_flow.run(GAME_DESCRIPTION, generate_qa_pair)

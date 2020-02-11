@@ -1,7 +1,6 @@
 from random import randint
-from brain_games import game_flow
 
-GAME_DESCRIPTION = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 LENGTH = 10
 
 
@@ -14,7 +13,3 @@ def generate_qa_pair():
                            for idx, val in enumerate(progession)])
     result = str(progession[missing_index])
     return (expression, result)
-
-
-def run():
-    game_flow.run(GAME_DESCRIPTION, generate_qa_pair)

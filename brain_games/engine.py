@@ -1,14 +1,14 @@
 from brain_games import cli
 
 
-def run(description, qa_func):
+def run(game):
     cli.welcome()
-    print(description, '\n')
+    print(game.DESCRIPTION, '\n')
     name = cli.get_name()
     cli.greet(name)
     print()
     for _ in range(3):
-        q, a = qa_func()
+        q, a = game.generate_qa_pair()
         print('Question: {}'.format(q))
         answer = cli.get_answer()
         if (answer == a):
